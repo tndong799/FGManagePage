@@ -1,0 +1,98 @@
+@use 'variables';
+
+:root{
+    --primary-font: #{$primary-font};
+    --secondary-font: #{$secondary-font} ;
+
+    --primary-color: #{$primary-color};
+    --white-color: #{$white-color};
+    --purple-color: #{$purple-color};
+    --red-color: #{$red-color};
+
+    --bright-gray-1-color: #{$bright-gray-1-color};
+    --bright-gray-2-color: #{$bright-gray-2-color};
+    --bright-gray-3-color: #{$bright-gray-3-color};
+    --bright-gray-4-color: #{$bright-gray-4-color};
+    --bright-gray-5-color: #{$bright-gray-5-color};
+    --dark-gray-1-color: #{$dark-gray-1-color};
+    --dark-gray-3-color: #{$dark-gray-3-color};
+    --dark-gray-5-color: #{$dark-gray-5-color};
+
+    --body-bg: #{$bright-gray-5-color};
+    --divider-color: #{$divider-color};
+    --sub-menu-width: #{$sub-menu-width};
+    --main-menu-width: #{$main-menu-width};
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,h4,h5,h6,input,a,button,textarea, select{
+    font-family: var(--primary-font);
+}
+a{
+    text-decoration: none;
+}
+input,textarea, select{
+    border: none;
+    outline: 0;
+    padding: 0;
+}
+button{
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--dark-gray-5-color);
+    height: 100vh;
+}
+.app{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    background: var(--body-bg);
+}
+
+.btn{
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--dark-gray-1-color);
+    background-color: var(--bright-gray-4-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &--primary{
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+    &--size-s{
+        padding: 6px 12px;
+    }
+}
+
+
+@font-face {
+    font-family: Gibson;
+    src: url('/assets/fonts/Gibson-SemiBold/Gibson-SemiBold.ttf');
+    font-weight: 600;
+}

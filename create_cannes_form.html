@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar__menu">
+                <div class="sidebar__menu-list">
+                    <a href="#" class="sidebar__logo"><img src="./assets/images/logo.svg" alt="Logo"></a>
+                    <div class="sidebar__menus">
+                        <div class="sidebar__menu-item">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/email-icon.svg" alt="Email">
+                                <span>Email</span>
+                            </a>
+                        </div>
+                        <div class="sidebar__menu-item">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/user-icon.svg" alt="User">
+                                <span>Contact</span>
+                            </a>
+                        </div>
+                        <div class="sidebar__menu-item">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/book-icon.svg" alt="Book">
+                                <span>Content</span>
+                            </a>
+                        </div>
+                        <div class="sidebar__menu-item">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/chart-icon.svg" alt="Chart">
+                                <span>Reports</span>
+                            </a>
+                        </div>
+                        <div class="sidebar__menu-item">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/planning-icon.svg" alt="Planning">
+                                <span>Growth</span>
+                            </a>
+                        </div>
+                        <div class="sidebar__menu-item active">
+                            <a href="" class="sidebar__menu-link">
+                                <img src="./assets/images/setting-icon.svg" alt="Setting">
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar__menu-bottom">
+                    <div class="sidebar__menu-item">
+                        <a href="" class="sidebar__menu-link">
+                            <img src="./assets/images/bell-icon.svg" alt="Bell">
+                            <span>Notifications</span>
+                        </a>
+                    </div>
+                    <div class="sidebar__menu-item">
+                        <a href="" class="sidebar__menu-link">
+                            <div class="sidebar__avatar">
+                                DT
+                            </div>
+                            <!-- <img class="sidebar__avatar" src="./assets/images/setting-icon.svg" alt="Setting"> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <h2 class="submenu__heading">SETTINGS</h2>
+                <div class="submenu__list">
+                    <ul>
+                        <li class="submenu__item active">
+                            <a href="">Canned Responses</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="">Chat widget</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="">Teammate management</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="">Email configuration</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <form class="form">
+                <div class="form__header">
+                    <h1 class="content__title">Create canned response</h1>
+                    <div class="form__action">
+                        <a href="index.html" class="btn btn--cancle">Cancle</a>
+                        <button class="btn btn--primary">Create</button>
+                    </div>
+                </div>
+                <div class="form__content">
+                    <div class="form__group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="">No category</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="shortcut">Shortcut</label>
+                        <input type="text" id="shortcut" placeholder="Enter shortcut">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="content">Content</label>
+                        <textarea id="content" rows="8" placeholder="Write something"></textarea>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="tag">Tag</label>
+                        <div class="tag__wrapper">
+                            <button class="btn btn--size-s" id="tag"><img src="./assets/images/plus-black-icon.svg" alt="Plus icon">Add</button>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label>Action</label>
+                        <div class="form__group-wrapper">
+                            <input checked type="radio" id="no_action" name="action" value="No action">
+                            <label for="no_action">No action</label>
+                        </div>
+                        <div class="form__group-wrapper">
+                            <input type="radio" id="reassign_teammate" name="action" value="Reassign teammate">
+                            <label for="reassign_teammate">Reassign teammate</label>
+                        </div>
+                        <div class="form__group-wrapper">
+                            <input type="radio" id="resolve_conversation" name="action" value="Resolve conversation">
+                            <label for="resolve_conversation">Resolve conversation</label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label>Available for</label>
+                        <div class="form__group-wrapper">
+                            <input checked type="radio" id="everyone" name="available" value="Everyone">
+                            <label for="everyone">Everyone</label>
+                        </div>
+                        <div class="form__group-wrapper">
+                            <input type="radio" id="specific_team" name="available" value="Specific team(s)">
+                            <label for="specific_team">Specific team(s)</label>
+                        </div>
+                        <div class="form__group-wrapper">
+                            <input type="radio" id="myself_only" name="available" value="Myself only">
+                            <label for="myself_only">Myself only</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
