@@ -4,6 +4,6 @@
     <li>Click vào collapse button sẽ ẩn submenu</li>
     <li>Click vào button "Create canned response" để chuyển sang trang Form create</li>
     <li>Click vào button "Cancle" để chuyển về trang index</li>
-    <li>Vì lần đầu dùng SCSS nên có nhiều chỗ dùng không đc hợp lý lắm ^^!</li>
+    <li>Vì lần đầu dùng SCSS nên có nhiều chỗ em dùng không đc hợp lý lắm ^^!</li>
     <li>Sử dụng chrome để trải nghiệm tốt nhất!!!</li>
 </ul>
