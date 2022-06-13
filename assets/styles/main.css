@@ -179,6 +179,7 @@ input, textarea, select {
   border: none;
   outline: 0;
   padding: 0;
+  margin: 0;
 }
 
 button {
@@ -186,6 +187,7 @@ button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 body {
@@ -850,6 +852,11 @@ body {
   text-align: start;
 }
 
+.content .main .table tr th > button {
+  padding: 0;
+  margin-right: 8px;
+}
+
 .content .main .table tr th img {
   width: 10px;
   height: 10px;
@@ -867,9 +874,25 @@ body {
   border-bottom: 1px solid var(--bright-gray-4-color);
 }
 
+.content .main .table__checkbox {
+  width: 50px;
+}
+
+.content .main .table__checkbox > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .content .main .table__checkbox input {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .content .main .table__title {
@@ -977,6 +1000,7 @@ body {
 }
 
 .content .main .table__usage {
+  width: 96px;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2rem;

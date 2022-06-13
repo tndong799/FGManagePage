@@ -41,12 +41,14 @@ input,textarea, select{
     border: none;
     outline: 0;
     padding: 0;
+    margin: 0;
 }
 button{
     outline: none;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
 }
 body{
     font-family: var(--primary-font);

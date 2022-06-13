@@ -213,9 +213,9 @@
                 position: sticky;
                 top: 0;
                 border-bottom: 1px solid var(--bright-gray-4-color);
-                & tr{
+                // & tr{
                     // border-bottom: 1px solid var(--bright-gray-4-color);
-                }
+                // }
             }
 
             tr{
@@ -229,6 +229,11 @@
                     color: var(--dark-gray-4-color);
                     vertical-align: middle;
                     text-align: start;
+
+                    > button{
+                        padding: 0;
+                        margin-right: 8px;
+                    }
 
                     img{
                         width: 10px;
@@ -248,9 +253,16 @@
                 }
             }
             &__checkbox{
+                width: 50px;
+                &> div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
                 input{
-                    width: 16px;
-                    height: 16px;
+                    width: 18px;
+                    height: 18px;
                 }
             }
 
@@ -341,6 +353,7 @@
             }
 
             &__usage{
+                width: 96px;
                 font-weight: 400;
                 font-size: 1.4rem;
                 line-height: 2rem;
