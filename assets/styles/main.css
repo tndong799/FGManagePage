@@ -248,7 +248,7 @@ body {
 
 @font-face {
   font-family: Gibson;
-  src: url("/assets/fonts/Gibson-SemiBold/Gibson-SemiBold.ttf");
+  src: url("/assets/fonts/Gibson-SemiBold/Gibson-SemiBold.woff");
   font-weight: 600;
 }
 
@@ -719,6 +719,10 @@ body {
   color: var(--dark-gray-1-color);
 }
 
+.content .main .action-bar__search:focus-within {
+  border-color: var(--primary-color);
+}
+
 .content .main .action-bar__select {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 15.6%;
@@ -730,6 +734,11 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2rem;
+  cursor: pointer;
+}
+
+.content .main .action-bar__select:focus-within {
+  border-color: var(--primary-color);
 }
 
 .content .main .action-bar__button {

@@ -112,6 +112,10 @@
                     line-height: 2rem;
                     color: var(--dark-gray-1-color);
                 }
+
+                &:focus-within{
+                    border-color: var(--primary-color);
+                }
             }
 
             &__select{
@@ -123,6 +127,10 @@
                 font-weight: 400;
                 font-size: 1.4rem;
                 line-height: 2rem;
+                cursor: pointer;
+                &:focus-within{
+                    border-color: var(--primary-color);
+                }
             }
 
             &__button{
