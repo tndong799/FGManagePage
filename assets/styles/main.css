@@ -464,7 +464,7 @@ body {
   transition: all .3s ease;
 }
 
-.sidebar__collapse.hide img {
+.sidebar__collapse.rotate img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

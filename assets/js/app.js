@@ -3,5 +3,5 @@ const submenu = document.querySelector('.submenu');
 
 collapseBtn.addEventListener('click', () => {
     submenu.classList.toggle('hide');
-    collapseBtn.classList.toggle('hide');
+    collapseBtn.classList.toggle('rotate');
 })
