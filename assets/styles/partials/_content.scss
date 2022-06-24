@@ -89,8 +89,9 @@
             width: 100%;
 
             &__search{
-                flex: 0 1 64.8%;
-                max-width: 64.8%;
+                // flex: 0 1 64.8%;
+                // max-width: 64.8%;
+                flex: 1;
                 display: flex;
                 align-items: center;
                 padding: 7px 12px;
@@ -119,8 +120,9 @@
             }
 
             &__select{
-                flex: 0 1 15.6%;
-                max-width: 15.6%;
+                // flex: 0 1 15.6%;
+                // max-width: 15.6%;
+                width: 160px;
                 padding: 7px 12px;
                 border: 1px solid var(--bright-gray-3-color);
                 border-radius: 4px;
@@ -134,8 +136,9 @@
             }
 
             &__button{
-                flex: 0 0 19.6%;
-                max-width: 19.6%;
+                // flex: 0 0 19.6%;
+                // max-width: 19.6%;
+                width: 204px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -220,7 +223,7 @@
             thead{
                 position: sticky;
                 top: 0;
-                border-bottom: 1px solid var(--bright-gray-4-color);
+                border-bottom: 1px solid var(--bright-gray-5-color);
                 // & tr{
                     // border-bottom: 1px solid var(--bright-gray-4-color);
                 // }
@@ -324,7 +327,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
-                    color: var(--bright-gray-1-color);
+                    color: var(--dark-gray-1-color);
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
@@ -345,6 +348,14 @@
                     display: flex;
                     column-gap: 12px;
                     align-items: center;
+                    color: var(--dark-gray-1-color);
+
+                    & span{
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    color: var(--dark-gray-1-color);
+                    }
                 }
 
                 img{
@@ -367,6 +378,7 @@
                 font-size: 1.4rem;
                 line-height: 2rem;
                 color: var(--dark-gray-1-color);
+                
             }
         }
 
